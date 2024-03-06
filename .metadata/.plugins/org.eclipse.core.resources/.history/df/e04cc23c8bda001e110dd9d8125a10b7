@@ -1,0 +1,44 @@
+package Execicio_95;
+
+import java.util.Random;
+
+public class MatrizTransposta {
+
+	public static void main(String[] args) {
+		int[][] matriz = new int[4][4];
+		
+		// prenechendo a matriz com valores aleatórios
+		Random random = new Random();
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				matriz[i][j] = random.nextInt(10); // Gera um número aleatório entre 0 e 9
+			}
+		}
+		
+		System.out.println("Matriz original:");
+		exibirMatriz(matriz);
+		
+		int[][] matrizTransposta = calcularMatriztransposta(matriz);
+		
+		System.out.println("Matriz transposta:");
+		exibirMatriz(matrizTransposta);
+		
+
+	}
+
+	//Método para exibir uma matriz
+	private static void exibirMatriz(int[][] matrizTransposta) {
+		for (int i = 0; i < matrizTransposta.length; i++) {
+			for (int j = 0; j < matrizTransposta[i].length; j++) {
+				System.out.print(matrizTransposta[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static int[][] calcularMatriztransposta(int[][] matriz) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
