@@ -1,0 +1,10 @@
+package Exercico_106;
+
+public class VerificarPrimo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

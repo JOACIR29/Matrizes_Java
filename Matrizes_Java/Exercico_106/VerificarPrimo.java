@@ -1,0 +1,35 @@
+package Exercico_106;
+
+public class VerificarPrimo {
+
+	public static void main(String[] args) {
+		int numero = 17;
+		if (verificarPrimo(numero)) {
+			System.out.println(numero + " é um número primo.");
+		} else {
+			System.out.println(numero + " não é um número primo.");
+		}
+
+	}
+	
+	public static boolean verificarPrimo(int numero) {
+		if (numero <= 1) {
+			return false;
+		}
+		
+		return verificarPrimoRecursivo(numero, 2);
+	}
+	
+	public static boolean verificarPrimoRecursivo(int numero, int divisor) {
+		if (divisor == numero) {
+			return true;
+		}
+		
+		if (numero % divisor == 0) {
+			return false;
+		}
+		
+		return verificarPrimoRecursivo(numero, divisor + 1);
+	}
+
+}
