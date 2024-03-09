@@ -1,0 +1,42 @@
+package Exercico_117;
+
+public class PalavraPrima2 {
+	public static boolean isPalavraPrima(String palavra) {
+		// Converter a palavra para letras minúsculas para evitar diferenças se caso
+		palavra = palavra.toLowerCase();
+
+		int somaValoresLetras = 0;
+
+		// Calcular a soma dos valores das letras
+		for (int i = 0; i < palavra.length(); i++) {
+			char letra = palavra.charAt(i);
+			int valorLetra = letra - 'a' + 1; // Obter o valor da letra (a=1, b=2, etc.)
+			somaValoresLetras += valorLetra;
+		}
+
+		// Verificar se a soma dos valores das letras é um número primo
+		boolean isPrimo = true;
+		if (somaValoresLetras < 2) {
+			isPrimo = false;
+		} else {
+			for (int i = 2; i <= Math.sqrt(somaValoresLetras); i++) {
+				if (somaValoresLetras % i == 0) {
+					isPrimo = false;
+					break;
+				}
+			}
+		}
+		
+		return isPrimo;
+	}
+
+	public static void main(String[] args) {
+		String palavra = "Joacir";
+		if (isPalavraPrima(palavra)) {
+			System.out.println("A palavra " + palavra + " é uma palavra-prima!");
+		} else {
+			System.out.println("A palavra " + palavra + " não é uma palavra-prima.");
+		}
+	}
+
+}
