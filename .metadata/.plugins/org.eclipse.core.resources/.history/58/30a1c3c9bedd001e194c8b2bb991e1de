@@ -1,0 +1,10 @@
+package Exercico_116;
+
+public class PalavraPrima {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
