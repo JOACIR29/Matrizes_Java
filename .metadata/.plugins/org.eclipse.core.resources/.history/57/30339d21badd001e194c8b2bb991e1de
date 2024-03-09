@@ -14,7 +14,7 @@ public class TorreDeHanoi {
 	public static void resolverTorreDeHanoi(int numDiscos, char origem, char auxiliar, String string) {
 		if (numDiscos == 1) {
 			// Caso base: menor o disco a origem para o destino
-			System.out.println("Mover disco 1 de " + origem + " para " + string) ;
+			System.out.println("Mover disco 1 de " + origem + " para " +string) ;
 		} else {
 			// Mover n-1 discos da origem para auxiliar usando do destino como auxiliar
 			resolverTorreDeHanoi(numDiscos - 1, origem, auxiliar, string);
