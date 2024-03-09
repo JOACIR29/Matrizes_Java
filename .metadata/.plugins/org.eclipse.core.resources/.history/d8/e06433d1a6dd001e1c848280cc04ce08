@@ -1,0 +1,12 @@
+package Exercico_111;
+
+public class MenorValorVetor {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Olá mundo!");
+
+	}
+
+}
