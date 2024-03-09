@@ -1,6 +1,6 @@
 package Exercico_113;
 
-public class SomaVetor {
+public class somaVetor {
 
 	public static void main(String[] args) {
 		int[] vetor = { 1, 2, 3, 4, 5 };
